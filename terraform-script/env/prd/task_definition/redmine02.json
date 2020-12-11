@@ -1,0 +1,12 @@
+[
+  {
+    "name": "redmine02",
+    "image": "767325888870.dkr.ecr.ap-northeast-1.amazonaws.com/redmine:latest",
+    "mountPoints": [
+      {
+        "containerPath": "/usr/src/redmine/sqlite",
+        "sourceVolume": "redmine02-efs"
+      }
+    ]
+  }
+]

@@ -1,0 +1,72 @@
+{
+    "tasks": [
+        {
+            "attachments": [
+                {
+                    "id": "645d5e46-3d37-4cf9-969f-85f9f9f0edda",
+                    "type": "ElasticNetworkInterface",
+                    "status": "ATTACHED",
+                    "details": [
+                        {
+                            "name": "subnetId",
+                            "value": "subnet-09d9888e0daab307d"
+                        },
+                        {
+                            "name": "networkInterfaceId",
+                            "value": "eni-08a5b9a4b0f46ae94"
+                        },
+                        {
+                            "name": "macAddress",
+                            "value": "06:89:42:f4:2e:2e"
+                        },
+                        {
+                            "name": "privateIPv4Address",
+                            "value": "10.0.102.62"
+                        }
+                    ]
+                }
+            ],
+            "availabilityZone": "ap-northeast-1a",
+            "clusterArn": "arn:aws:ecs:ap-northeast-1:767325888870:cluster/internship-cluster",
+            "containers": [
+                {
+                    "containerArn": "arn:aws:ecs:ap-northeast-1:767325888870:container/2463fcb5-e53a-4a43-870d-81ffe7b6ea3c",
+                    "taskArn": "arn:aws:ecs:ap-northeast-1:767325888870:task/5dbcfa02-4791-48b4-9228-88999207c304",
+                    "name": "redmine02",
+                    "image": "767325888870.dkr.ecr.ap-northeast-1.amazonaws.com/redmine:latest",
+                    "lastStatus": "PENDING",
+                    "networkInterfaces": [
+                        {
+                            "attachmentId": "645d5e46-3d37-4cf9-969f-85f9f9f0edda",
+                            "privateIpv4Address": "10.0.102.62"
+                        }
+                    ],
+                    "healthStatus": "UNKNOWN",
+                    "cpu": "0"
+                }
+            ],
+            "cpu": "256",
+            "createdAt": 1599033098.039,
+            "desiredStatus": "RUNNING",
+            "group": "family:redmine02",
+            "healthStatus": "UNKNOWN",
+            "lastStatus": "PENDING",
+            "launchType": "FARGATE",
+            "memory": "512",
+            "overrides": {
+                "containerOverrides": [
+                    {
+                        "name": "redmine02"
+                    }
+                ],
+                "inferenceAcceleratorOverrides": []
+            },
+            "platformVersion": "1.4.0",
+            "tags": [],
+            "taskArn": "arn:aws:ecs:ap-northeast-1:767325888870:task/5dbcfa02-4791-48b4-9228-88999207c304",
+            "taskDefinitionArn": "arn:aws:ecs:ap-northeast-1:767325888870:task-definition/redmine02:3",
+            "version": 2
+        }
+    ],
+    "failures": []
+}
