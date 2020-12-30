@@ -1,3 +1,5 @@
+/*
+
 # Security Group ===========================================
 resource "aws_security_group" "security-group" {
   vpc_id      = aws_vpc.main-vpc.id
@@ -94,3 +96,4 @@ resource "aws_security_group_rule" "nfs-outbound" {
   to_port           = 0
   protocol          = "-1"
 }
+*/

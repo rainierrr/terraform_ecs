@@ -1,14 +1,4 @@
-module "efs1" {
-  source                     = "../../modules/efs"
-  creation_token             = "efs-dev1"
-  security_groups            = [aws_security_group.nfs.id] #変更
-  subnet1_id                 = aws_subnet.internship_private1.id
-  subnet2_id                 = aws_subnet.internship_private2.id
-  efs_file_system_tags_name  = "redmine-dev-efs"
-  efs_access_point_tags_name = "for-dev-sqlite"
-}
-
-
+/*
 module "ecs1" {
   source                = "../../modules/ecs/task_definition"
   family                = "redmine-dev1"
@@ -59,7 +49,7 @@ module "service1" {
 output "alb1_dns_name" {
   value = module.alb1.alb_dns_name
 }
-/*
+
 resource "aws_instance" "main" {
   ami           = "ami-01b03bedfcb7b7002"
   instance_type = "t2.micro"

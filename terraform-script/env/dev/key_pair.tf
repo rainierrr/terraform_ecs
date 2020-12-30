@@ -1,7 +1,0 @@
-resource "aws_key_pair" "this" {
-  key_name   = "rainier-key"
-  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCtkHoQHKL0bV4T/dcnKeoE8la5weTplWRfyw6p73z9FHvLEiOrfx/XsaBhDC6nqhpa6qmeYoIkBcqXmnaypMJIRiOUEDLf0BzH8Byxvp4FenWXRNsENiw5GD06Kn8OJpXR4cUji2CO87CzW8k1f1oXhT5qAAiAaOMsU8yEdF0eDSsxVWcWTL4kzkDlIs4Zfg8ejsQPxrAr3vPLwEcLHSV00AMLVAft+WyRix+bU+5MTonb0efbAYc+6XnXCSP4RKhjxPYsiJi3hG65RpcxxkIzpBO4EZd8cvEOPhF5C0FDblwG4A5I1mwuHmU8ihv65NGY0mmbBIWEosVUXNet9z+sFgxLB9obfdH/3cl7gKMJL/dOh7kVy3TDuTM4NWja0zR8jMBhmT/BzDy3kIWFHVzKlzSTfq2NqfEYrouwZ4K3fO01ZG0Zvgu+raIPRzUpvta8QTnuujjNCH1uQDXGXrGpdiwmccxKZpDFA2ynGPCJX/wWS7bf5j3IeN9We0E1c4zdgaCE9fU64nV9Ag18aEp+kFiuLwdBQh8MMGZJ7G2slQysyWu/Z1gtifDCem46hpV9l/mCnGyOma5nD9BOYX3wAcyHm4JyhZbqvLP/tSG5GyW0PdggGYaMtZJbHhoThFWUjY52yw5TbdT/3jLHHvfW9If1n4kTuEz4ROqrQAl1dw== rainier@rainierrr-desktop"
-  tags = {
-    Name = "rainierのssh用pub_key"
-  }
-}
